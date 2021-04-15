@@ -10,6 +10,8 @@ The project links to Firebase iOS SDK v7.5.0 (set in the `Podfile`) because that
 2. Create a firebase project for the backend data.
 3. I (couldn't/didn't have time/haven't properly tried) getting it working by loading the GoogleService-Info.plist file automatically.
 So set hardcoded values from that file in `CppFirebaseCalls.cpp`, anywhere you see `SET_THIS_TO_SOMETHING_VALID`.
+4. Do a `pod install` to install the iOS dependencies. Open the resulting `FirebaseCppDoubleCallback.xcworkspace` and **NOT**
+`FirebaseCppDoubleCallback.xcodeproj`.
 
 The bug gets triggered whether there's any data in the project backend or not, which surprised me. Probably because I don't actually
 read the result of the firestore query and the bug is during the storage call.
