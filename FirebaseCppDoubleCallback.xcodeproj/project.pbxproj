@@ -3,18 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		5DA845F7EF3D776B829E82C9 /* Pods_FirebaseCppDoubleCallback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A89C82F796471B5A67576087 /* Pods_FirebaseCppDoubleCallback.framework */; };
 		BFA8F85226285E590051EA2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA8F85126285E590051EA2C /* AppDelegate.m */; };
 		BFA8F85526285E590051EA2C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA8F85426285E590051EA2C /* SceneDelegate.m */; };
-		BFA8F85826285E590051EA2C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA8F85726285E590051EA2C /* ViewController.m */; };
+		BFA8F85826285E590051EA2C /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BFA8F85726285E590051EA2C /* ViewController.mm */; };
 		BFA8F85B26285E590051EA2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFA8F85926285E590051EA2C /* Main.storyboard */; };
 		BFA8F85D26285E5E0051EA2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFA8F85C26285E5E0051EA2C /* Assets.xcassets */; };
 		BFA8F86026285E5E0051EA2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFA8F85E26285E5E0051EA2C /* LaunchScreen.storyboard */; };
 		BFA8F86326285E5E0051EA2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA8F86226285E5E0051EA2C /* main.m */; };
+		BFA8F87F262860E30051EA2C /* CppFirebaseCalls.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFA8F87D262860E30051EA2C /* CppFirebaseCalls.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,12 +28,14 @@
 		BFA8F85326285E590051EA2C /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		BFA8F85426285E590051EA2C /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		BFA8F85626285E590051EA2C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BFA8F85726285E590051EA2C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BFA8F85726285E590051EA2C /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		BFA8F85A26285E590051EA2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BFA8F85C26285E5E0051EA2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFA8F85F26285E5E0051EA2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFA8F86126285E5E0051EA2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFA8F86226285E5E0051EA2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BFA8F87D262860E30051EA2C /* CppFirebaseCalls.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CppFirebaseCalls.cpp; sourceTree = "<group>"; };
+		BFA8F87E262860E30051EA2C /* CppFirebaseCalls.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CppFirebaseCalls.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +56,6 @@
 				7E0EBF12D98AE3B701CEEAB4 /* Pods-FirebaseCppDoubleCallback.debug.xcconfig */,
 				5163225529252CC276D8469F /* Pods-FirebaseCppDoubleCallback.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -83,12 +85,14 @@
 				BFA8F85326285E590051EA2C /* SceneDelegate.h */,
 				BFA8F85426285E590051EA2C /* SceneDelegate.m */,
 				BFA8F85626285E590051EA2C /* ViewController.h */,
-				BFA8F85726285E590051EA2C /* ViewController.m */,
+				BFA8F85726285E590051EA2C /* ViewController.mm */,
 				BFA8F85926285E590051EA2C /* Main.storyboard */,
 				BFA8F85C26285E5E0051EA2C /* Assets.xcassets */,
 				BFA8F85E26285E5E0051EA2C /* LaunchScreen.storyboard */,
 				BFA8F86126285E5E0051EA2C /* Info.plist */,
 				BFA8F86226285E5E0051EA2C /* main.m */,
+				BFA8F87D262860E30051EA2C /* CppFirebaseCalls.cpp */,
+				BFA8F87E262860E30051EA2C /* CppFirebaseCalls.hpp */,
 			);
 			path = FirebaseCppDoubleCallback;
 			sourceTree = "<group>";
@@ -214,9 +218,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFA8F85826285E590051EA2C /* ViewController.m in Sources */,
+				BFA8F85826285E590051EA2C /* ViewController.mm in Sources */,
 				BFA8F85226285E590051EA2C /* AppDelegate.m in Sources */,
 				BFA8F86326285E5E0051EA2C /* main.m in Sources */,
+				BFA8F87F262860E30051EA2C /* CppFirebaseCalls.cpp in Sources */,
 				BFA8F85526285E590051EA2C /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
