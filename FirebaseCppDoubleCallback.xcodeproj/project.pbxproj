@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5DA845F7EF3D776B829E82C9 /* Pods_FirebaseCppDoubleCallback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A89C82F796471B5A67576087 /* Pods_FirebaseCppDoubleCallback.framework */; };
 		BFA8F85226285E590051EA2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA8F85126285E590051EA2C /* AppDelegate.m */; };
 		BFA8F85526285E590051EA2C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA8F85426285E590051EA2C /* SceneDelegate.m */; };
 		BFA8F85826285E590051EA2C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA8F85726285E590051EA2C /* ViewController.m */; };
@@ -17,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5163225529252CC276D8469F /* Pods-FirebaseCppDoubleCallback.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseCppDoubleCallback.release.xcconfig"; path = "Target Support Files/Pods-FirebaseCppDoubleCallback/Pods-FirebaseCppDoubleCallback.release.xcconfig"; sourceTree = "<group>"; };
+		7E0EBF12D98AE3B701CEEAB4 /* Pods-FirebaseCppDoubleCallback.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseCppDoubleCallback.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseCppDoubleCallback/Pods-FirebaseCppDoubleCallback.debug.xcconfig"; sourceTree = "<group>"; };
+		A89C82F796471B5A67576087 /* Pods_FirebaseCppDoubleCallback.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseCppDoubleCallback.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFA8F84D26285E590051EA2C /* FirebaseCppDoubleCallback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseCppDoubleCallback.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFA8F85026285E590051EA2C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BFA8F85126285E590051EA2C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -36,17 +40,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DA845F7EF3D776B829E82C9 /* Pods_FirebaseCppDoubleCallback.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		70EFA2D2BB12D13F602EF9D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E0EBF12D98AE3B701CEEAB4 /* Pods-FirebaseCppDoubleCallback.debug.xcconfig */,
+				5163225529252CC276D8469F /* Pods-FirebaseCppDoubleCallback.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BFA8F84426285E590051EA2C = {
 			isa = PBXGroup;
 			children = (
 				BFA8F84F26285E590051EA2C /* FirebaseCppDoubleCallback */,
 				BFA8F84E26285E590051EA2C /* Products */,
+				70EFA2D2BB12D13F602EF9D3 /* Pods */,
+				DDCEFB551099559699FDF7B9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +93,14 @@
 			path = FirebaseCppDoubleCallback;
 			sourceTree = "<group>";
 		};
+		DDCEFB551099559699FDF7B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A89C82F796471B5A67576087 /* Pods_FirebaseCppDoubleCallback.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFA8F86626285E5E0051EA2C /* Build configuration list for PBXNativeTarget "FirebaseCppDoubleCallback" */;
 			buildPhases = (
+				38F7FDE1BE2E5C8B820BEAE0 /* [CP] Check Pods Manifest.lock */,
 				BFA8F84926285E590051EA2C /* Sources */,
 				BFA8F84A26285E590051EA2C /* Frameworks */,
 				BFA8F84B26285E590051EA2C /* Resources */,
+				9B9CDB78374B986D277809BD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -139,6 +166,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38F7FDE1BE2E5C8B820BEAE0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FirebaseCppDoubleCallback-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B9CDB78374B986D277809BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FirebaseCppDoubleCallback/Pods-FirebaseCppDoubleCallback-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FirebaseCppDoubleCallback/Pods-FirebaseCppDoubleCallback-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FirebaseCppDoubleCallback/Pods-FirebaseCppDoubleCallback-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BFA8F84926285E590051EA2C /* Sources */ = {
@@ -288,6 +357,7 @@
 		};
 		BFA8F86726285E5E0051EA2C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E0EBF12D98AE3B701CEEAB4 /* Pods-FirebaseCppDoubleCallback.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -305,6 +375,7 @@
 		};
 		BFA8F86826285E5E0051EA2C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5163225529252CC276D8469F /* Pods-FirebaseCppDoubleCallback.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
