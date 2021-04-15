@@ -10,6 +10,7 @@
 
 #include <string>
 #include <memory>
+#include <system_error>
 //
 // Forward declarations
 //
@@ -29,12 +30,12 @@ namespace firebase
 class FirebaseClient
 {
 public:
-    FirebaseClient();
+    FirebaseClient( std::error_code& error );
     ~FirebaseClient();
     
     /** @brief Asks Firestore which file it needs, then downloads from Firebase Storage, returning the local filename.
      */
-    std::string downloadFile();
+    void downloadFile( std::string outputDirectory, std::function<void(std::string,std::error_code)> callback );
 protected:
     std::unique_ptr<::firebase::App> pFirebaseApp_;
     std::unique_ptr<::firebase::storage::Storage> pStorage_;

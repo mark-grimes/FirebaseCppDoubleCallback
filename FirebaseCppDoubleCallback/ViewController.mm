@@ -21,9 +21,24 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    pFirebaseCpp_.reset( new FirebaseClient() );
-    std::string result = pFirebaseCpp_->downloadFile();
-    NSLog(@"File has been downloaded and saved to '%s'", result.c_str());
+    // Figure out the bundle's document directory and use that to download to
+    NSError* nsError;
+    NSURL* documentDirectory = [[NSFileManager defaultManager] URLForDirectory:NSDocumentDirectory
+                                                                      inDomain:NSUserDomainMask
+                                                             appropriateForURL:nil
+                                                                        create:true
+                                                                         error:&nsError];
+
+    std::error_code error;
+    pFirebaseCpp_.reset( new FirebaseClient( error ) );
+    if( !error )
+    {
+        pFirebaseCpp_->downloadFile( [documentDirectory fileSystemRepresentation], [](std::string path,std::error_code error) {
+            if( error ) NSLog(@"There was an error downloading the file");
+            else NSLog(@"File has been downloaded and saved to '%s'", path.c_str());
+        } );
+    }
+    else NSLog(@"There was an error initialising the Firebase C++ client");
 }
 
 
