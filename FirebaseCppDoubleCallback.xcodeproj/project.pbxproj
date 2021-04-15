@@ -17,6 +17,8 @@
 		BFA8F86326285E5E0051EA2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA8F86226285E5E0051EA2C /* main.m */; };
 		BFA8F87F262860E30051EA2C /* CppFirebaseCalls.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFA8F87D262860E30051EA2C /* CppFirebaseCalls.cpp */; };
 		BFA8F884262867A00051EA2C /* libfirebase_app.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA8F883262867860051EA2C /* libfirebase_app.a */; };
+		BFA8F88826286B410051EA2C /* libfirebase_firestore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA8F88726286B330051EA2C /* libfirebase_firestore.a */; };
+		BFA8F88A26286B5E0051EA2C /* libfirebase_storage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA8F88926286B4E0051EA2C /* libfirebase_storage.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		BFA8F87D262860E30051EA2C /* CppFirebaseCalls.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CppFirebaseCalls.cpp; sourceTree = "<group>"; };
 		BFA8F87E262860E30051EA2C /* CppFirebaseCalls.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CppFirebaseCalls.hpp; sourceTree = "<group>"; };
 		BFA8F883262867860051EA2C /* libfirebase_app.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfirebase_app.a; path = ../../dependencies/firebase_cpp_sdk_7_1_1/libs/ios/universal/libfirebase_app.a; sourceTree = "<group>"; };
+		BFA8F88726286B330051EA2C /* libfirebase_firestore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfirebase_firestore.a; path = ../../dependencies/firebase_cpp_sdk_7_1_1/libs/ios/universal/libfirebase_firestore.a; sourceTree = "<group>"; };
+		BFA8F88926286B4E0051EA2C /* libfirebase_storage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfirebase_storage.a; path = ../../dependencies/firebase_cpp_sdk_7_1_1/libs/ios/universal/libfirebase_storage.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +49,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFA8F88A26286B5E0051EA2C /* libfirebase_storage.a in Frameworks */,
 				BFA8F884262867A00051EA2C /* libfirebase_app.a in Frameworks */,
+				BFA8F88826286B410051EA2C /* libfirebase_firestore.a in Frameworks */,
 				5DA845F7EF3D776B829E82C9 /* Pods_FirebaseCppDoubleCallback.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,6 +109,8 @@
 		DDCEFB551099559699FDF7B9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BFA8F88926286B4E0051EA2C /* libfirebase_storage.a */,
+				BFA8F88726286B330051EA2C /* libfirebase_firestore.a */,
 				BFA8F883262867860051EA2C /* libfirebase_app.a */,
 				A89C82F796471B5A67576087 /* Pods_FirebaseCppDoubleCallback.framework */,
 			);

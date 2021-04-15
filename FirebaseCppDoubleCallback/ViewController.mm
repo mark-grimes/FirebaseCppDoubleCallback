@@ -9,6 +9,9 @@
 #include "CppFirebaseCalls.hpp"
 
 @interface ViewController ()
+{
+    std::unique_ptr<FirebaseClient> pFirebaseCpp_;
+}
 
 @end
 
@@ -17,7 +20,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    std::string result = downloadFile();
+    
+    pFirebaseCpp_.reset( new FirebaseClient() );
+    std::string result = pFirebaseCpp_->downloadFile();
     NSLog(@"File has been downloaded and saved to '%s'", result.c_str());
 }
 
