@@ -19,6 +19,7 @@
 		BFA8F884262867A00051EA2C /* libfirebase_app.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA8F883262867860051EA2C /* libfirebase_app.a */; };
 		BFA8F88826286B410051EA2C /* libfirebase_firestore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA8F88726286B330051EA2C /* libfirebase_firestore.a */; };
 		BFA8F88A26286B5E0051EA2C /* libfirebase_storage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA8F88926286B4E0051EA2C /* libfirebase_storage.a */; };
+		BFA8F88D26286DF90051EA2C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFA8F88C26286DF80051EA2C /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		BFA8F883262867860051EA2C /* libfirebase_app.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfirebase_app.a; path = ../../dependencies/firebase_cpp_sdk_7_1_1/libs/ios/universal/libfirebase_app.a; sourceTree = "<group>"; };
 		BFA8F88726286B330051EA2C /* libfirebase_firestore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfirebase_firestore.a; path = ../../dependencies/firebase_cpp_sdk_7_1_1/libs/ios/universal/libfirebase_firestore.a; sourceTree = "<group>"; };
 		BFA8F88926286B4E0051EA2C /* libfirebase_storage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfirebase_storage.a; path = ../../dependencies/firebase_cpp_sdk_7_1_1/libs/ios/universal/libfirebase_storage.a; sourceTree = "<group>"; };
+		BFA8F88C26286DF80051EA2C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				BFA8F86226285E5E0051EA2C /* main.m */,
 				BFA8F87D262860E30051EA2C /* CppFirebaseCalls.cpp */,
 				BFA8F87E262860E30051EA2C /* CppFirebaseCalls.hpp */,
+				BFA8F88C26286DF80051EA2C /* GoogleService-Info.plist */,
 			);
 			path = FirebaseCppDoubleCallback;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFA8F86026285E5E0051EA2C /* LaunchScreen.storyboard in Resources */,
+				BFA8F88D26286DF90051EA2C /* GoogleService-Info.plist in Resources */,
 				BFA8F85D26285E5E0051EA2C /* Assets.xcassets in Resources */,
 				BFA8F85B26285E590051EA2C /* Main.storyboard in Resources */,
 			);
